@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Goals.Views"
         mc:Ignorable="d"
-        Title="MainView" Height="450" Width="800">
+        Title="Goals" Height="720" Width="1280" FontSize="22">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <TextBlock Text="Menu" HorizontalAlignment="Center"/>
+            <Button Content="Short-term goals" Margin="10" Padding="10"/>
+            <Button Content="Long-term goals" Margin="10" Padding="10"/>
+        </StackPanel>
+
+        <ContentControl x:Name="ActiveItem" Grid.Column="2" Grid.Row="1"/>
     </Grid>
 </Window>
