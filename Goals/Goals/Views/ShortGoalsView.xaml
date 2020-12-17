@@ -5,8 +5,14 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Goals.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800" Background="Red">
+             d:DesignHeight="450" d:DesignWidth="800" Background="White">
     <Grid>
-            
+        <DataGrid x:Name="shortGoals" CanUserAddRows="True" AutoGenerateColumns="False" Width="auto" VerticalScrollBarVisibility="Auto" MaxWidth="1028">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=goalName}"  Header="Short-term goals" Width="auto"/>
+                <DataGridCheckBoxColumn Binding="{Binding Path=isDone}" Header="Done" Width="auto" />
+                <DataGridTextColumn Binding="{Binding Path=goalComment}" Header="Comment" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </UserControl>
