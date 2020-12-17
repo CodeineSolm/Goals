@@ -9,5 +9,13 @@ namespace Goals.ViewModels
 {
     public class MainViewModel : Conductor<object>
     {
+        public void ShortGoals()
+        {
+            ActivateItem(new ShortGoalsViewModel());
+        }
+        public void LongGoals()
+        {
+            ActivateItem(new LongGoalsViewModel());
+        }
     }
 }

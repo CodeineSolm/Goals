@@ -22,8 +22,8 @@
 
         <StackPanel Grid.Row="1" Grid.Column="1">
             <TextBlock Text="Menu" HorizontalAlignment="Center" />
-            <Button Content="Short-term goals" Margin="10" Padding="10"/>
-            <Button Content="Long-term goals" Margin="10" Padding="10"/>
+            <Button x:Name="ShortGoals" Content="Short-term goals" Margin="10" Padding="10"/>
+            <Button x:Name="LongGoals" Content="Long-term goals" Margin="10" Padding="10"/>
         </StackPanel>
 
         <ContentControl x:Name="ActiveItem" Grid.Column="2" Grid.Row="1"/>
