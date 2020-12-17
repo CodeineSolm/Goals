@@ -76,9 +76,17 @@
     </Compile>
     <Compile Include="Models\GoalsModel.cs" />
     <Compile Include="Services\FileIOService.cs" />
+    <Compile Include="ViewModels\LongGoalsViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\ShortGoalsViewModel.cs" />
+    <Compile Include="Views\LongGoalsView.xaml.cs">
+      <DependentUpon>LongGoalsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShortGoalsView.xaml.cs">
+      <DependentUpon>ShortGoalsView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -111,7 +119,15 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Page Include="Views\LongGoalsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ShortGoalsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
